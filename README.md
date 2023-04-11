@@ -1,7 +1,7 @@
 # Caesar-cipher
 The program encrypt or decrypt (depends on your choice) an input text. The key (step) are required to input.
 
-code = ''
+`code = ''
 
 def choose_language(answer):
     russian_alphabet = 'абвгдежзийклмнопрстуфхцчшщъыьэюя'
@@ -72,4 +72,4 @@ for c in text:
     else:  
         code += base(c, cipher) 
 
-print(code)
+print(code)`
