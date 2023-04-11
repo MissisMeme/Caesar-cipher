@@ -1,4 +1,3 @@
-<
 code = ''
 
 def choose_language(answer):
@@ -76,4 +75,3 @@ for c in text:
         code += base(c, cipher) 
 
 print(code)
->
