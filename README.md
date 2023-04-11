@@ -4,6 +4,7 @@ The program encrypt or decrypt (depends on your choice) an input text. The key (
 `code = ''
 
 def choose_language(answer):
+
     russian_alphabet = 'абвгдежзийклмнопрстуфхцчшщъыьэюя'
     english_alphabet = 'abcdefghijklmnopqrstuvwxyz'
     if answer.lower() == 'en':
@@ -12,12 +13,14 @@ def choose_language(answer):
         return russian_alphabet
     
 def is_valid_lang(answer2):
+
     while answer2.lower() != 'en' and answer2.lower() != 'ru':
         answer2 = input('Я Вас не понимаю, попробуйте выбрать язык еще раз') 
     if answer2.lower() == 'en' or answer2.lower() == 'ru':
         return answer2
 
 def is_valid_ciph(num):
+
     while num != '1' and num != '2' and not num.isdigit():
         num = input('Попробуйте еще раз: 1 - зашифровать, 2 - расшифровать')
     if num == '1' or num == '2':
@@ -25,6 +28,7 @@ def is_valid_ciph(num):
         return num   
 
 def is_valid_key(n):
+
     while not n.isdigit():
         n = input('Введите целое число в качестве ключа ("сдвиг")')
     if n.isdigit():
